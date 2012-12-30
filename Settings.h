@@ -7,3 +7,4 @@
 #define kDiosBaseView @"views"
 #define kDiosBaseTaxonmyTerm @"taxonomy_term"
 #define kDiosBaseTaxonmyVocabulary @"taxonomy_vocabulary"
+#define kDiosBaseVote @"votingapi"
