@@ -44,26 +44,30 @@
         failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
 
 + (void)nodeSave:(NSDictionary *)node
-         success:(void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
-         failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
+        success:(void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
+        failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
 
 + (void)nodeUpdate:(NSDictionary *)node
-           success:(void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
-           failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
+        success:(void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
+        failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
 
 + (void)nodeDelete:(NSDictionary *)node
-           success:(void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
-           failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
+        success:(void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
+        failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
 
 + (void)nodeIndexWithPage:(NSString *)page fields:(NSString *)fields parameters:(NSArray *)parameteres pageSize:(NSString *)pageSize
-                  success:(void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
-                  failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
+        success:(void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
+        failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
 
 + (void)nodeIndex:(NSDictionary *)params
-          success:(void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
-          failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
+        success:(void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
+        failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
 
 + (void)nodeAttachFile:(NSDictionary *)params
-               success:(void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
-               failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
+        success:(void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
+        failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
+
++ (void)nodeCommentsGet:(NSDictionary *)node
+        success:(void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
+	failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
 @end
