@@ -2,6 +2,7 @@
 #define kDiosEndpoint @"api"
 #define kDiosBaseNode @"node"
 #define kDiosBaseComment @"comment"
+#define kDiosBaseComments @"comments"
 #define kDiosBaseUser @"user"
 #define kDiosBaseFile @"file"
 #define kDiosBaseView @"views"
