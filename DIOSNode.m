@@ -117,4 +117,15 @@
   [operation setCompletionBlockWithSuccess:success failure:failure];
   [operation start];
 }
+
+#pragma mark nodeCommentsGets
++ (void)nodeCommentsGet:(NSDictionary *)node
+        			success:(void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
+				failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure {
+	
+	[[DIOSSession sharedSession] getPath:[NSString stringWithFormat:@"%@/%@/%@/%@", kDiosEndpoint, kDiosBaseNode, [node objectForKey:@"nid"], kDiosBaseComments]
+							  parameters:nil
+								 success:success
+								 failure:failure];
+}
 @end
